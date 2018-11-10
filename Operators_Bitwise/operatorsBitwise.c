@@ -42,11 +42,31 @@ int main()
 
     unsigned char g = 154; // 1001 1010 (154 in binary code)
     unsigned char h = 100; // 0110 0100 (100 in binary code)
+    char j = 154; // 1001 1010 (154 in binary code)
     int result4 = 0;
+    int result6 = 0;
 
-    result4 = ~g; // (~) bitwise operator is unary and flips the binary values
+    /*  The complement (~) bitwise operator flips the binary values from 1's to 0's
+        and vice versa. In this example 'g' is unsigned meaning that it can have a
+        positive or negative value. Because of this, ~g will use the 2's complement form
+        [~g = -(g + 1)].
 
-    printf(" The result of ~g is: %d\n", result4);
+        The bitwise complement of 154 is 0110 0101 (101) and the 2's complement of 101 is
+        -[1001 1011] (-155)
+
+        There is a good explanation of this here:
+        https://www.programiz.com/c-programming/bitwise-operators#complement */
+
+    result4 = ~g;
+
+    printf("The result of ~g is: %d\n", result4);
+
+    /*  This example uses the complement (~) bitwise operator for a signed (positive) variable
+        and therefore the output will be equal to the decimal value of the complement of 'j'. */
+
+    result6 = ~j;
+
+    printf("The result of ~j is: %d\n", result6);
 
     // left (<<) and right (>>) shift  bitwise operators
 
@@ -54,7 +74,7 @@ int main()
     int result5 = 0;
 
     result5 = i << 2; // shifts bits of i to left by two spaces
-                     // 0100 0010 is the new value after the shift
+                     // 0001 0100 0000 (320) is the new value after the shift
 
     printf("The result of i << 2 is: %d\n", result5);
 
