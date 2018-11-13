@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1542091041 source:c:\users\matts\desktop\working files\programming\cprograms\adventuresinc\challenge4_convert_minutes_to_days_years\challenge4convertminutestodaysyears.c
+	<stdio.h>
+	<stdlib.h>
+
