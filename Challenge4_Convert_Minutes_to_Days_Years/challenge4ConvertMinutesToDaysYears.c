@@ -25,7 +25,8 @@ int main()
 
     /* Below: the %0.3f is limiting the output to 3 decimal places */
 
-    printf("%0.3f minutes equals %0.3f days and %0.3f years!\n\a", userDefinedMinutes, days, years);
+    printf("%0.3f minutes equals %0.3f days!\n", userDefinedMinutes, days);
+    printf("%0.3f minutes equals %0.3f years!\n\a", userDefinedMinutes, years);
 
     return 0;
 }
