@@ -8,13 +8,17 @@
 
 int main()
 {
-    float userDefinedMinutes;
+    /* You can use the int data type for userDefinedMinutes, but ints are limited to how many
+       bits they can store so you might want to use doubles or floats for larger numbers.
+       Also, you can use double data types for the minutesInDay and minutesInYear values */
+
+    int userDefinedMinutes;
     float minutesInDay = 60 * 24;
     float minutesInYear = 60 * 24 * 365;
 
     printf("Hi there! Please enter the number of minutes you would like converted into days and years.\n");
 
-    scanf("%f", &userDefinedMinutes);
+    scanf("%d", &userDefinedMinutes);
 
     /* Note: I tried listing the below variables in the top section with the rest, but I guess
        since C reads top-down it won't work and leaves the variables uninitiated or with zero
@@ -25,8 +29,8 @@ int main()
 
     /* Below: the %0.3f is limiting the output to 3 decimal places */
 
-    printf("%0.3f minutes equals %0.3f days!\n", userDefinedMinutes, days);
-    printf("%0.3f minutes equals %0.3f years!\n\a", userDefinedMinutes, years);
+    printf("%d minutes equals %0.3f days!\n", userDefinedMinutes, days);
+    printf("%d minutes equals %0.3f years!\n\a", userDefinedMinutes, years);
 
     return 0;
 }
