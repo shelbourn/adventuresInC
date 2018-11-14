@@ -24,7 +24,11 @@ int main()
        since C reads top-down it won't work and leaves the variables uninitiated or with zero
        values. */
 
-    float days = userDefinedMinutes / minutesInDay;
+    /* You can force the data to be less precise in this example by using the CAST operator.
+       This can be done by changing the data type for days to an int and then use a cast for
+       the minutesInDay variable -- int days = userDefinedMinutes / (int)minutesInDay */
+
+    float days = (int)(userDefinedMinutes / minutesInDay);
     float years = userDefinedMinutes / minutesInYear;
 
     /* Below: the %0.3f is limiting the output to 3 decimal places */
