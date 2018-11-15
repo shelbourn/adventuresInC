@@ -10,19 +10,19 @@ int main()
 {
     int numberToTest, remainder;
 
-    printf("Enter your number to be tested.\n\n");
+    printf("Enter your number to be tested: ");
     scanf("%d", &numberToTest);
 
     remainder = numberToTest % 2;
 
     if (remainder == 0)
     {
-        printf("This number is even.\n");
+        printf("\nThis number is even.");
     }
 
     else
     {
-        printf("This number is odd.");
+        printf("\nThis number is odd.");
     }
 
     return 0;
