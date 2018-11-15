@@ -15,13 +15,11 @@ int main()
 
     remainder = numberToTest % 2;
 
-    if (remainder == 0)
-    {
+    if (remainder == 0) {
         printf("\nThis number is even.");
     }
 
-    else
-    {
+    else {
         printf("\nThis number is odd.");
     }
 
