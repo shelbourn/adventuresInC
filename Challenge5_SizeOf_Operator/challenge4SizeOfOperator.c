@@ -17,6 +17,5 @@ int main()
     printf("The size of a double data type is: %u bytes\n", sizeof(double));
     printf("The size of a long double data type is: %u bytes\n", sizeof(long double));
 
-
     return 0;
 }
