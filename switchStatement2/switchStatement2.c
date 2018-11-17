@@ -6,26 +6,26 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int main(void)
+int main()
 {
     float value1, value2;
     char operator;
 
     printf("Please enter your expression:\n");
-    scanf("%f, %c, %f", &value1, &operator, &value2);
+    scanf("%f %c %f", &value1, &operator, &value2); // MAKE SURE THESE ARE NO COMMAS IN BETWEEN FORMAT SPECIFIERS
 
     switch(operator)
     {
         case '+':
-            printf("%0.2f\n", value1 + value2);
+            printf("%.2f\n", value1 + value2);
             break;
 
         case '-':
-            printf("%0.2f\n", value1 - value2);
+            printf("%.2f\n", value1 - value2);
             break;
 
         case '*':
-            printf("%0.2f\n", value1 * value2);
+            printf("%.2f\n", value1 * value2);
             break;
 
         case '/':
@@ -33,7 +33,7 @@ int main(void)
                 printf("ERROR. Cannot have a denominator of zero.\n");
             }
             else
-                printf("%0.2f\n", value1 / value2);
+                printf("%.2f\n", value1 / value2);
             break;
 
         default:
