@@ -14,9 +14,9 @@ int main()
     printf("Please enter your expression:\n");
     scanf("%f %c %f", &value1, &operator, &value2); // MAKE SURE THESE ARE NO COMMAS IN BETWEEN FORMAT SPECIFIERS
 
-    switch(operator)
+    switch(operator) // no semicolon needed when calling a switch statement
     {
-        case '+':
+        case '+': // colon after each swith case
             printf("%.2f\n", value1 + value2);
             break;
 
@@ -36,7 +36,7 @@ int main()
                 printf("%.2f\n", value1 / value2);
             break;
 
-        default:
+        default: // default is the equivalent to the 'else' in an if-else statement
             printf("ERROR. Unknown operator.\n");
             break;
     }
