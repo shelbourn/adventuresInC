@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1542610322 source:c:\users\matts\desktop\working files\programming\cprograms\adventuresinc\challenge6_control_flow_determine_amount_of_pay\challenge6controlflowdetermineamountofpay.c
+	<stdio.h>
+	<stdlib.h>
+
