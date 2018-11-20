@@ -61,7 +61,11 @@ int main(void)
     netPay = grossPay - taxes;
 
     // display output
-    printf("\nHere are your paycheck details:\n\nHours Worked: %i\nGross Pay: %.2f\nTotal Taxes: %.2f\nNetpay: %.2f", hours, grossPay, taxes, netPay);
+    printf("\nHere are your paycheck details for this week:\n\n");
+    printf("Hours Worked: %i\n", hours);
+    printf("Gross Pay: %.2f\n", grossPay);
+    printf("Total Taxes: %.2f\n", taxes);
+    printf("Net Pay: %.2f\n\a", netPay);
 
     /*  Make sure to perform multiple tests to test all scenarios. In this case we had cases
         overtime, without overtime, and different tax rates. Test all to make sure program works
